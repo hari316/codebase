@@ -1,0 +1,8 @@
+STRING MANIPULATION:
+-------------------------------------
+
+1) Check whether the given String is Palindrome or not.
+
+2) Remove duplicate characters from a given string. Eg: mississippi to misp
+
+3) String Compression a given string “aabbbccc” to “a2b3c3”.
