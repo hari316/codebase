@@ -1,8 +1,11 @@
-STRING MANIPULATION:
+BIT MANIPULATION:
 -------------------------------------
 
-1) Check whether the given String is Palindrome or not.
+1) Count the number of ones in the binary represenation of an integer (An O(n) solution is fine, where n is the number of bits used to
+represent the number, but as a part of this question atleast google and find out what the O(m) solution is, where m is the number of ones
+in the binary representation).
 
-2) Remove duplicate characters from a given string. Eg: mississippi to misp
+2) a) Check if the 13th bit of a number is set, and if it is, clear the 8th bit of the number.
+b) Figure out a way to perform this operation without using conditional expressions or the ternary operator.
 
-3) String Compression a given string “aabbbccc” to “a2b3c3”.
+3) Swap the adjacent bits of an integer. For example, swap the first and second bits, the third and fourth bits and so on.
