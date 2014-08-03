@@ -1,6 +1,6 @@
 from random import shuffle
-def bubble_sort(seq):
-    
+
+def bubble_sort(seq):    
     changed = True
     while changed:
         changed = False
@@ -23,6 +23,6 @@ if __name__ == '__main__':
     shuffle(test_case)
     assert test_data != test_case, "Data is sorted."
     print "Unsorted data: %s" % test_case
-    bubble_sort_1(test_case)
+    bubble_sort(test_case)
     print "Sorted data: %s" % test_case
     assert test_data == test_case, "Data is not sorted."
