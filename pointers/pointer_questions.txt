@@ -1,0 +1,9 @@
+1) Imagine you are implementing string.h from scratch ( which means basically if you want to use string functions,
+you have to implement them).
+void strrev( char *str );
+Implement this function, using pointers.
+
+2) Write a program that takes a 2D array of strings, and sorts them alphabetically. Use pointers, and you will see how
+pointers make it effortless to do such actions.
+
+3) Write a function that does matrix multiplication. The catch is you are only allowed to pass in pointers.
