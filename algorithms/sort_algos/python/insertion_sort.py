@@ -8,7 +8,7 @@ def insertion_sort(seq):
             seq[prev_index+1] = seq[prev_index]
             prev_index -= 1
         seq[prev_index+1] = key
-    return None
+    return seq
 
 if __name__ == '__main__':
     test_data = range(10)
@@ -16,6 +16,5 @@ if __name__ == '__main__':
     shuffle(test_case)
     assert test_data != test_case, "Data is sorted."
     print "Unsorted data: %s" % test_case
-    insertion_sort(test_case)
-    print "Sorted data: %s" % test_case
+    print "Sorted data: %s" % insertion_sort(test_case)
     assert test_data == test_case, "Data is not sorted."
