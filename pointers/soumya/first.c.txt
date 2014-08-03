@@ -1,0 +1,37 @@
+#include "stdafx.h"
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+void strrev_own(char * str,char *res)
+{
+	char* index;
+	int len = 0, loop_counter = 0;
+	//iterate to make index point to the last element
+	for (index = str; *index != '\0'; index++,len++);
+	//come to last character that is not null
+	printf("length:%d\n", len);
+	index--;
+	
+	for (loop_counter = 0; loop_counter < len; loop_counter++,index--)
+	{
+		printf("assigning %c to %d", *(index), loop_counter);
+		res[loop_counter] = *(index);
+		
+	}
+	res[loop_counter] = '\0';
+	
+
+	
+}
+int main()
+{
+	char *str = "hello";
+	int index=0,d;
+	
+	char *res = NULL;
+	res = (char*)malloc(6*sizeof(char));
+	strrev_own(str,res);
+
+	printf("reverse string : %s", res);
+	free(res);
+	return 0;
