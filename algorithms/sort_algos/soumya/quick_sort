@@ -1,0 +1,78 @@
+// quick_sort.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include<stdio.h>
+void swap(int a[], int first,int second)
+{
+	int temp;
+	temp = a[first];
+	a[first] = a[second];
+	a[second]= temp;
+
+}
+int partition(int array[], int start, int end)
+{
+	int pivot = end,i;
+	int left=start,right=end-1,temp;
+	while (left <= right)
+	{
+		while ((array[left] <= array[pivot])&&(left<=end-1))
+		{
+			left = left + 1;
+		}
+		while ((array[right] > array[pivot])&&(right>=0))
+		{
+			right = right - 1;
+		}
+		if (left <= right)
+		{
+			temp = array[left];
+			array[left] = array[right];
+			array[right] = temp;
+
+			left = left + 1;
+			right = right - 1;
+		}
+
+	}
+	temp = array[right+1];
+	array[right+1] = array[pivot];
+	array[pivot] = temp;
+	return right+1;
+
+}
+void sort(int array[], int start, int end)
+{
+	int pivot = 0;
+	if (start < end)
+	{
+		
+		pivot = partition(array, start, end);
+		sort(array, start, pivot - 1);
+		sort(array, pivot + 1, end);
+
+	}
+}
+
+int main()
+{
+	int array[] = { 8, 4, 9, 3, 5, 7,11,2,1,6 };
+	int index = 0;
+	for (index = 0; index < 10; index++)
+	{
+		printf("%d ", array[index]);
+
+	}
+	printf("\n");
+	sort(array, 0, 9);
+	printf(" after sorting \n");
+	for (index = 0; index < 10; index++)
+	{
+		printf("%d ", array[index]);
+
+	}
+	index = 0;
+	return 0;
+}
+
