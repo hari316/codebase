@@ -1,0 +1,13 @@
+PROBLEM STATEMENTS:
+-------------------------------------
+
+1.a Given two strings, check if they’re anagrams or not.
+   # Hint: Do mention the logic for solving the problem in linear time also.
+
+1.b Write a method to sort an array of strings so that all the anagrams are next to each other.
+
+2. You are given two sorted arrays, A and B, and A has a large enough buffer at the end to hold B Write a method to merge B into A in sorted order.
+
+3. Given a matrix in which each row and each column is sorted, write a method to find an element in it. #Hint do it in linear time.
+
+4. Write a program for finding a minimum element in rotated sorted array. 
