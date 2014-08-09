@@ -5,6 +5,8 @@ PROBLEM STATEMENTS:
    # Hint: Do mention the logic for solving the problem in linear time also.
 
 1.b Write a method to sort an array of strings so that all the anagrams are next to each other.
+//what does this mean??should we just bring all anagrams together or they should be sorted alphabetically also??
+
 
 2. You are given two sorted arrays, A and B, and A has a large enough buffer at the end to hold B Write a method to merge B into A in sorted order.
 
