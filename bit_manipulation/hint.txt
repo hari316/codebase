@@ -1,4 +1,4 @@
-Setting a biti
+Setting a bit
 Use the bitwise OR operator (|) to set a bit.
 number |= 1 << x;
 That will set bit x.
